@@ -1,0 +1,43 @@
+body{
+  background-color: #0e110e;
+}
+
+.sansserif{
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+h1{
+  color: white;
+}
+
+h2{
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-tepmlate-columns: auto auto auto;
+  grid-column-gap: 50px;
+  gird-row-gap: 50px;
+}
+
+.subtitle{
+  font-family: Arial, sans-serif;
+  font-style: italic;
+}
+
+.detail{
+    font-family: Arial, sans-serif;
+}
+
+#email-link:link{
+  color: DeepSkyBlue;
+}
+
+#email-link:hover{
+  color: white;
+}
