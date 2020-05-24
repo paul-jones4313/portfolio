@@ -1,5 +1,6 @@
 body{
   background: rgb(14, 17, 14);
+  font-size: 1.15em;
 }
 
 img{
@@ -30,10 +31,6 @@ p{
   gird-row-gap: 50px;
 }
 
-#title{
-  color: rgb(255, 36, 36);
-}
-
 .subtitle{
   color: rgb(255, 75, 75);
 }
@@ -51,6 +48,15 @@ p{
 }
 
 #myPic{
-  max-width: 25%;
+  max-width: 30vw;
   height: auto;
+}
+
+#title{
+  color: rgb(255, 36, 36);
+}
+
+#night-mode-button{
+  padding: 0px;
+  margin-left: 40px;
 }
