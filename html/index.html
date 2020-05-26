@@ -1,51 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="Paul David Jones III portfolio containing
     graphics project artificial intelligence game devolopment software engineer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link id="css-link" rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Paul's Portfolio</title>
   </head>
   <body>
 
     <!-- Introduction paragraph -->
     <header>
-      <h1 id="title">Paul's Portfolio <button id="night-mode-button" type="button">
-      <img src="../img/dayMode.png"></img></button></h1>
-      <p class="detail">My name is Paul D. Jones III.  Welcome to my personal portfolio webpage.
-        Here you will see a sample of my skill sets.  <br/>
-        Github links will be provided
-        below if you'd like to see
-        the source code itself.<br/>
-        Thank you for taking a look at my webpage and email me at <a href =
-        "mailto: pjones4313@gmail.com" id="email-link">
-        pjones4313@gmail.com</a> for any follow-up.</p>
+      <input type="checkbox" id="night-mode-button" name="theme" value=""/>
+      <label for="night-mode-button" class="detail" id="night-mode-button">
+      Dark Mode</label>
+      <h1 id="title">Paul D. Jones III</h1>
+      <h3 class="subtitle" id="job-desc">Software Engineer</h3>
+    <hr/>
     </header>
-    <div>
-      <img src="../img/me2.jpg" alt="../img/me.jpg" id="myPic">
-    </div>
 
-    <!-- 1st program, Graphics project -->
-    <div>
-      <h2 class="subtitle">Planetarium</h2>
-      <p class="detail">A simple graphical project to demonstrate my abilities</p>
-    </div>
+    <div class="container">
+      <h2 class="subtitle" id="abt-me">About Me</h2>
+      <div class="container-item">
+        <img src="../img/me2.jpg" alt="../img/me.jpg" id="myPic">
+      </div>
 
-    <!-- 2nd program, AI game -->
-    <div>
-      <h2 class="subtitle">AI Example</h2>
-      <p class="detail">A simple AI game to demonstrate my abilities with A* and MinMax</p>
-    </div>
+      <div class="container-item">
+        <p class="detail">My name is Paul.  Welcome to my personal portfolio webpage.
+          Here you will see a sample of my skill sets and a little about me.<br/>
+          Github links will be provided below if you'd like to see
+          the source code itself.<br/>
+          Thank you for taking a look at my webpage and email me at <a href =
+          "mailto: pjones4313@gmail.com" id="email-link">
+          pjones4313@gmail.com</a> for any follow-up.</p>
+      </div>
 
-    <!-- 3rd program, ??? -->
-    <!-- #0e110e -->
-    <div>
-      <h2 class="subtitle">File Editor</h2>
-      <p class="detail">An application that in it's final form would be able to
-      delete old videos automatically for a client so their video library doesn't
-      take up too much space</p>
-    </div>
+      <div class="container-item">
+        <h3 style="text-align: center;">Education</h3>
+        <ul class="detail">
+            <li>Graduated from University of North Carolina-Charlotte with a
+            B.S. in Computer Science</li>
+            <li>Concentrated in AI, Robotics, and Gaming</li>
+        </ul>
+      </div>
+
+      <div class="container-item">
+        <h3 style="text-align: center;">Interests</h3>
+        <ol class="detail">
+            <li>Automating tasks for end users</li>
+            <li>Graphic Design</li>
+            <li>Game Design</li>
+            <li>LiDar object detection</li>
+            <li>Image recognition</li>
+        </ol>
+      </div>
+
+      <!-- 1st program, Graphics project -->
+      <div class="container-item">
+        <h2 class="subtitle">Planetarium</h2>
+        <p class="detail">A simple graphical project to demonstrate my abilities</p>
+      </div>
+
+      <!-- 2nd program, AI game -->
+      <div class="container-item">
+        <h2 class="subtitle">AI Example</h2>
+        <p class="detail">A simple AI game to demonstrate my abilities with A* and MinMax</p>
+      </div>
+
+      <!-- 3rd program, ??? -->
+      <!-- #0e110e -->
+      <div class="container-item">
+        <h2 class="subtitle">File Editor</h2>
+        <p class="detail">An application that in it's final form would be able to
+        delete old videos automatically for a client so their video library doesn't
+        take up too much space</p>
+      </div>
+  </div>
+  <form class="form" action="index.html" method="post">
+
+  </form>
+
+  <script type="text/javascript">
+
+  var checkbox = document.querySelector('input[name=theme]');
+
+  checkbox.addEventListener('change', function(){
+    if(this.checked){
+      trans();
+      document.documentElement.setAttribute('data-theme', "dark");
+    }else{
+      trans();
+      document.documentElement.setAttribute('data-theme', "light");
+    }
+  })
+
+  let trans = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() =>{
+      document.documentElement.classList.remove('transition');
+    }, 1000)
+  }
+
+  </script>
+
   </body>
 </html>
