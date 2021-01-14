@@ -1,21 +1,21 @@
 html{
   --bg: rgb(245, 245, 245);
-  --hc: rgb(245, 6, 6);
-  --sc: rgb(225, 55, 55);
-  --tc: rgb(0, 0, 0);
-  --lc: rgb(0, 51, 255);
-  --hlc: rgb(0, 0, 200);
-  --pc: rgb(220, 220, 220);
+  --h1: rgb(245, 6, 6);
+  --h3-6: rgb(225, 55, 55);
+  --txt: rgb(0, 0, 0);
+  --lnk: rgb(0, 51, 255);
+  --hovLnk: rgb(0, 0, 200);
+  --container: rgb(220, 220, 220);
 }
 
 html[data-theme='dark']{
   --bg: rgb(14, 17, 14);
-  --hc: rgb(255, 36, 36);
-  --sc: rgb(255, 55, 55);
+  --h1: rgb(255, 36, 36);
+  --h3-6: rgb(255, 55, 55);
   --tc: rgb(240, 240, 240);
   --lc: rgb(0, 191, 255);
   --hlc: rgb(255, 255, 255);
-  --pc: rgb(30, 33, 30);
+  --container: rgb(30, 33, 30);
 }
 
 body{
@@ -49,7 +49,7 @@ ul{
 }
 
 .container {
-  background: var(--pc);
+  background: var(--container);
   display: flex;
   flex-wrap: wrap;
 }
@@ -61,7 +61,7 @@ ul{
 }
 
 .subtitle{
-  color: var(--sc);
+  color: var(--h3-6);
 }
 
 .detail{
@@ -88,7 +88,7 @@ ul{
 }
 
 #title{
-  color: var(--hc);
+  color: var(--h1);
   text-align: center;
 }
 
