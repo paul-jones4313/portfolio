@@ -60,7 +60,9 @@
 
       <div class="container-item">
         <p class="detail">
+            <a href"tel:7605368034">
             <img src="img/phone.png" alt="Travel" id="amazon-connect-travel">
+            </a>
             <br/>Call us at: <a href="tel:7605368034">(760) 536-8034</a>
             <br/>or chat here:
           </p>
@@ -111,6 +113,18 @@
   }
 
   </script>
-
+  <script type="text/javascript">
+    (function(w, d, x, id){
+      s=d.createElement('script');
+      s.src='https://d2s9x5slbvr0vu.cloudfront.net/amazon-connect-chat-interface-client.js';
+      s.async=1;
+      s.id=id;
+      d.getElementsByTagName('head')[0].appendChild(s);
+      w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+    })(window, document, 'amazon_connect', '6908ec7b-58de-426d-9fb7-c35d1ea7938e');
+    amazon_connect('styles', { openChat: { color: '#ffffff', backgroundColor: '#123456'}, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+    amazon_connect('snippetId', 'QVFJREFIajNZWm9TMmtpZVZPZlMwcnFsWVF1ZFc1T1poSjlRM3U2T01NOTdhRGhSRGdIOW9GbWpvRVUxQmtFMHlNNk1qUkVuQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNaTNyc1paZ0s5ZldZWXRvT0FnRVFnQ3VmbzJLRW5LSXNRNnQ4UklqNmExeXE1QVd2RFpjbklMU0VKaTZ3bFJqbWthR3d3NUZNdE1OMlJFSUs6OkZVSmppK1RPMXJ0MW41VG1GYkFMYmpuRkRVVGlVV1R2cSs5UzU4MFY5cVZKM3dYN1RDOEdCR3R6RGt0U2N3RG5tN0NMZGtkWUhQRlk4eE9LancyYnpNeFBWdkNHempGT3ZjVDF6TmFaWHZiU21yODlqVno4bWxEYjB5MjNRb3daSnpabUFaZW5UYWhmYnMyN0NucGdoRzgrdVhOaVIwWT0=');
+    amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown' ]);
+  </script>
   </body>
 </html>

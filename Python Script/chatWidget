@@ -1,0 +1,12 @@
+payload = {
+'sub': 6908ec7b-58de-426d-9fb7-c35d1ea7938e, // don't add single quotes, such as 'widgetId'
+'iat': datetime.utcnow(),
+'exp': datetime.utcnow() + timedelta(seconds=JWT_EXP_DELTA_SECONDS)
+}
+
+header = {
+'typ': "JWT",
+'alg': 'HS256'
+}
+
+encoded_token = jwt.encode((payload), CONNECT_SECRET, algorithm=JWT_ALGORITHM, headers=header) // CONNECT_SECRET is the security key provided by Amazon Connect
